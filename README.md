@@ -48,6 +48,13 @@ The dataset for this analysis is sourced from the **Dallas Open Data Portal**, f
   - **Performance by Neighborhood**: Neighborhood-wise breakdown of scores and violation severity.
   - Interactive filters for custom insights by score range, violation type, or establishment type.
 
+###### Power BI
+![PowerBI](https://github.com/user-attachments/assets/3e297090-3362-44cc-9324-afa51065e09c)
+
+###### Tableau
+![Tableau](https://github.com/user-attachments/assets/95e32687-db9e-46de-8730-d07500f5be35)
+
+
 ## Key Insights and Business Value
 - **Inspection Score Trends**: Identified trends in inspection scores, highlighting potential areas for increased oversight.
 - **Violation Patterns**: Most common violations and the establishments with repeated non-compliance.
