@@ -21,12 +21,21 @@ The dataset for this analysis is sourced from the **Dallas Open Data Portal**, f
 - **Create Dimensional Model**: Design a star schema with a central fact table for inspection results and dimension tables for supporting details.
 - **Database Schema Creation**: Implement the model in Azure SQL using DDL scripts.
 
+![Dimensional Model](https://github.com/user-attachments/assets/4e8149e9-8db8-4b8d-89f1-f5bac2b66877)
+
 ### Phase 3: Data Integration and Transformation
 - **ETL Workflow Development**: Design Alteryx workflows to transform and load data from staging tables into the dimensional model.
 - **Data Transformation**:
   - Generate surrogate keys for each dimension.
   - Standardize date formats, ensure referential integrity, and aggregate metrics as needed.
 - **Load Integration Tables**: Populate fact and dimension tables with transformed data.
+
+###### Fact Load
+![Dallas_Fact_Load](https://github.com/user-attachments/assets/8f0612c9-0537-44e0-875f-130d6e47ac20)
+
+###### Dimension Load
+![Dallas_Staging](https://github.com/user-attachments/assets/b045a040-fed9-4bee-b0c8-600ac3fb9e76)
+
 
 ### Phase 4: Business Intelligence and Dashboarding
 - **Power BI Dashboards**:
