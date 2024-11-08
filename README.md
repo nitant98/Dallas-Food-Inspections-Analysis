@@ -12,26 +12,14 @@ The dataset for this analysis is sourced from the **Dallas Open Data Portal**, f
 
 ## Project Phases and Deliverables
 
-### Phase 1: Data Extraction and Staging
+### Part 1: Data Extraction and Staging
 - **Data Loading**: Extract data from the Dallas Open Data portal and load it into a staging area in Azure SQL.
-- **Data Profiling**: Perform data profiling to validate structure, data types, and completeness.
-- **Staging Table Design**:
-  - Add metadata columns: `DI_CreateDate` (load timestamp) and `DI_WorkflowFileName` (Alteryx workflow name).
-  - Convert any text-based date fields to standard date formats.
+- **Data Profiling**: Perform data profiling to validate structure, data types, and completeness futhuremore staging data.
 
-*Deliverables*:
-- Alteryx workflow screenshots
-- Job completion times
-- DDL script for staging tables
-
-### Phase 2: Dimensional Modeling
-- **Identify Dimensions and Facts**: Establish core entities such as `Food Establishment`, `Inspection Date`, and `Violation`.
+### Part 2: Dimensional Modeling
+- **Identify Dimensions and Facts**: Establish core entities such as `Restaurants`, `Inspections`, and `Violation`.
 - **Create Dimensional Model**: Design a star schema with a central fact table for inspection results and dimension tables for supporting details.
 - **Database Schema Creation**: Implement the model in Azure SQL using DDL scripts.
-
-*Deliverables*:
-- ER model screenshots
-- Data model file (.dm1) and DDL scripts
 
 ### Phase 3: Data Integration and Transformation
 - **ETL Workflow Development**: Design Alteryx workflows to transform and load data from staging tables into the dimensional model.
@@ -39,11 +27,6 @@ The dataset for this analysis is sourced from the **Dallas Open Data Portal**, f
   - Generate surrogate keys for each dimension.
   - Standardize date formats, ensure referential integrity, and aggregate metrics as needed.
 - **Load Integration Tables**: Populate fact and dimension tables with transformed data.
-
-*Deliverables*:
-- Workflow screenshots
-- Alteryx files
-- Row counts for each table
 
 ### Phase 4: Business Intelligence and Dashboarding
 - **Power BI Dashboards**:
@@ -55,10 +38,6 @@ The dataset for this analysis is sourced from the **Dallas Open Data Portal**, f
   - **Map of Inspection Results**: Geospatial representation of inspection outcomes.
   - **Performance by Neighborhood**: Neighborhood-wise breakdown of scores and violation severity.
   - Interactive filters for custom insights by score range, violation type, or establishment type.
-
-*Deliverables*:
-- Published Power BI reports on Power BI Service
-- Published Tableau dashboards on Tableau Online
 
 ## Key Insights and Business Value
 - **Inspection Score Trends**: Identified trends in inspection scores, highlighting potential areas for increased oversight.
